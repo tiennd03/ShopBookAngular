@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="header-wrap">
+    <div class="top-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="social-links">
+            <ul>
+              <li><a href="#"><i class="icon fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="icon fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="icon fab fa-youtube"></i></a></li>
+              <li><a href="#"><i class="icon fab fa-behance"></i></a></li>
+            </ul>
+
+          </div> <!--social-link-->
+        </div>
+
+        <div class="col-md-6">
+          <div class="right-element">
+            <a href="#" class="user-account for-buy"><i class="icon fa-solid fa-user"></i><span>Account</span></a>
+            <a href="#" class="cart for-buy">
+              <i class="fa-solid fa-clipboard"></i><span>Cart:(0
+                $)</span></a>
+
+            <div class="action-menu">
+              <div class="search-bar" [class.show]="isSearchVisible">
+                <a href="#" class="search-button search-toggle p-2" (click)="toggleSearch($event)">
+                  <i class="icon fa-solid fa-magnifying-glass"></i>
+                </a>
+                <form role="search" method="get" class="search-box" [class.show]="isSearchVisible">
+                  <input class="search-field text search-input" placeholder="Search" type="search">
+                </form>
+              </div>
+            </div>
+
+          </div> <!--right-element-->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="book-list">
+    <div *ngFor="let book of books" class="book-detail">
+      <h1>{{ book.title }}</h1>
+      <h2>by {{ book.authors[0].name }}</h2>
+      <img [src]="book.cover.large" alt="{{ book.title }} cover" />
+      <p>{{ book.excerpts ? book.excerpts[0].text : 'No description available' }}</p>
+      <p><strong>Price: ${{ book.price || 'N/A' }}</strong></p>
+      <button (click)="addToCart(book)">Add to Cart</button>
+    </div>
+  </div>

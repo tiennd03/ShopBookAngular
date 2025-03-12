@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.book-author {
+    color: #555;
+    margin: 5px 0;
+}
+
+.book-price {
+    color: #007bff;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
